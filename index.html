@@ -1,30 +1,101 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>私のゲームサイト</title>
-  </head>
-  <body>
-    <h1>🎮 ゲームで遊ぼう！</h1>
-    <p><a href="https://ubg365.github.io/slope">Slope を遊ぶ</a></p>
-    <p><a href="https://ubg365.github.io/2048">2048 を遊ぶ</a></p>
-  </body>
-</html>
-
-<iframe src="https://ubg365.github.io/slope" width="800" height="600"></iframe>
-
-<!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>🎮 私のゲームセンター</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>僕の</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', 'Yu Gothic', sans-serif;
+      background: #fdfdfd;
+      color: #333;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      padding: 30px 0;
+      background: linear-gradient(135deg, #f6d365, #fda085);
+      color: white;
+      border-radius: 0 0 20px 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    .entry {
+      background: white;
+      margin: 30px auto;
+      padding: 20px 30px;
+      max-width: 800px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+      transition: transform 0.3s;
+    }
+
+    .entry:hover {
+      transform: scale(1.01);
+    }
+
+    .entry h2 {
+      font-size: 1.4em;
+      color: #f57c00;
+      margin-bottom: 10px;
+    }
+
+    .entry .date {
+      font-size: 0.9em;
+      color: #888;
+      margin-bottom: 20px;
+    }
+
+    .entry p {
+      font-size: 1.1em;
+      line-height: 1.7;
+      white-space: pre-line;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      color: #aaa;
+      font-size: 0.9em;
+    }
+  </style>
 </head>
-<body style="text-align:center; font-family:sans-serif;">
-  <h1>🎮 ゲームであそぼう！</h1>
+<body>
 
-  <h2>Slope</h2>
-  <iframe src="https://ubg365.github.io/slope" width="800" height="600" frameborder="0" allowfullscreen></iframe>
+  <header>
+    <h1>🌿僕の</h1>
+    <p style="margin-top: 10px;">思ったこと、感じたことを自由に残こすよ。</p>
+  </header>
 
-  <h2>2048</h2>
-  <iframe src="https://ubg365.github.io/2048" width="400" height="500" frameborder="0" allowfullscreen></iframe>
+  <div class="entry">
+    <h2>初めての投稿</h2>
+    <div class="date">2025年5月28日（水）</div>
+    <p>
+今日はついに、自分だけの日記サイトを作った！
+テストは簡単すぎたwww🤣
+勉強しなくても余裕。
+これから毎日ちょっとずつ書いていこう〜。
+    </p>
+  </div>
+
+
+  <footer>© 2025 僕の日記帳</footer>
 </body>
 </html>
+
+<script>
+  const correctPassword = "僕";
+
+  let userPassword = prompt("🔐 パスワードを入力してください：");
+
+  if (userPassword !== correctPassword) {
+    document.body.innerHTML = "<h2 style='text-align:center; margin-top:50px;'>ちがうよーんwww🤣</h2>";
+  }
+</script>
